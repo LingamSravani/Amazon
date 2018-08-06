@@ -15,7 +15,7 @@ public class Amazon {
 	WebDriver driver = null;
 
 	@Given("^amazon link$")
-	public void goToRedbus() {
+	public void goToAmazon() {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/");
@@ -59,13 +59,13 @@ public class Amazon {
 	public void search() 
 	{
 			
-		driver.findElement(By.xpath("//*[@id=\"enterAddressFullName\"]")).sendKeys("Krishna Vamshi");
-		driver.findElement(By.xpath("//*[@id=\"enterAddressPhoneNumber\"]")).sendKeys("9652119965");
+		driver.findElement(By.xpath("//*[@id=\"enterAddressFullName\"]")).sendKeys("sravani");
+		driver.findElement(By.xpath("//*[@id=\"enterAddressPhoneNumber\"]")).sendKeys("9948052528");
 		driver.findElement(By.xpath("//*[@id=\"enterAddressPostalCode\"]")).sendKeys("411057");
 		driver.findElement(By.xpath("//*[@id=\"enterAddressAddressLine1\"]")).sendKeys("Employee Relaxation Centre");
 		driver.findElement(By.xpath("//*[@id=\"enterAddressAddressLine2\"]")).sendKeys("Capgemini Hinjewadi phase 3");
 		
-		driver.findElement(By.xpath("//*[@id=\"enterAddressLandmark\"]")).sendKeys("Cognizant");
+		driver.findElement(By.xpath("//*[@id=\"enterAddressLandmark\"]")).sendKeys("RajivGandhi infotech park");
 		driver.findElement(By.xpath("//*[@id=\"enterAddressCity\"]")).sendKeys("Pune");
 		driver.findElement(By.xpath("//*[@id=\"enterAddressStateOrRegion\"]")).sendKeys("Maharastra");
 		driver.findElement(By.xpath("//*[@id=\"newShippingAddressFormFromIdentity\"]/div[1]/div[1]/form/div[5]/span/span/input")).click();
